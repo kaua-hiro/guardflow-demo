@@ -37,6 +37,7 @@ export default function AppShell() {
               key={to}
               to={to}
               end={end}
+              aria-label={label}
               className={({ isActive }) => "shell__nav-item" + (isActive ? " is-active" : "")}
             >
               <Icon size={17} />
@@ -62,6 +63,16 @@ export default function AppShell() {
 
       <main className="shell__main scrollbar">
         <Outlet />
+        <footer className="shell__legal">
+          <p>
+            <strong>Nortis Tecnologia Ltda.</strong> (dado fictício) · CNPJ 00.000.000/0001-00
+            (fictício) · contato@nortis.example.com (fictício)
+          </p>
+          <p>
+            GuardFlow é um projeto de demonstração de portfólio desenvolvido por{" "}
+            <strong>Kauã Hiro Mizumoto</strong>. Nenhum dado exibido é real.
+          </p>
+        </footer>
       </main>
     </div>
   );

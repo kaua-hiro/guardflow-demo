@@ -69,6 +69,8 @@ export default function Login() {
                 <label>
                   <span>E-mail corporativo</span>
                   <input
+                    id="email"
+                    name="email"
                     type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
@@ -79,6 +81,8 @@ export default function Login() {
                 <label>
                   <span>Senha</span>
                   <input
+                    id="password"
+                    name="password"
                     type="password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
@@ -112,6 +116,8 @@ export default function Login() {
                 <label>
                   <span>Código de verificação</span>
                   <input
+                    id="otp"
+                    name="otp"
                     className="login__otp"
                     type="text"
                     inputMode="numeric"

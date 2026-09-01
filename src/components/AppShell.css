@@ -149,6 +149,24 @@
   max-width: 1240px;
 }
 
+.shell__legal {
+  margin-top: 48px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-soft);
+  font-size: 11.5px;
+  line-height: 1.6;
+  color: var(--text-faint);
+}
+
+.shell__legal p {
+  margin: 0 0 4px;
+}
+
+.shell__legal strong {
+  color: var(--text-dim);
+  font-weight: 600;
+}
+
 @media (max-width: 860px) {
   .shell {
     flex-direction: column;
