@@ -49,7 +49,7 @@ export default function Login() {
   };
 
   return (
-    <div className="login">
+    <main className="login">
       <div className="login__panel">
         <div className="login__brand">
           <ShieldMark />
@@ -161,7 +161,7 @@ export default function Login() {
           </p>
         </div>
       </div>
-    </div>
+    </main>
   );
 }
 
