@@ -9,11 +9,18 @@ import AuditTrail from "./pages/AuditTrail";
 import Checklist from "./pages/Checklist";
 import Settings from "./pages/Settings";
 import NotFound from "./pages/NotFound";
+import useCanonical from "./hooks/useCanonical";
+
+function CanonicalManager() {
+  useCanonical();
+  return null;
+}
 
 function App() {
   return (
     <AppDataProvider>
       <BrowserRouter>
+        <CanonicalManager />
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route

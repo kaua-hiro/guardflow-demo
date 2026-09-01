@@ -1,0 +1,11 @@
+# GuardFlow
+
+> GuardFlow é um projeto de demonstração de portfólio: um dashboard de automação de compliance e revisão de acessos, com trilha de auditoria em cadeia de hashes, checklist SOC 2 / ISO / LGPD e controle de risco de acesso. Desenvolvido por Kauã Hiro Mizumoto como peça de portfólio — não é um produto SaaS em produção.
+
+## Páginas
+
+- [Login e autenticação em duas etapas](https://guardflow-demo.vercel.app/login)
+- [Visão geral de compliance](https://guardflow-demo.vercel.app/)
+- [Revisão de acessos](https://guardflow-demo.vercel.app/acessos)
+- [Trilha de auditoria](https://guardflow-demo.vercel.app/auditoria)
+- [Checklist de compliance](https://guardflow-demo.vercel.app/checklist)
