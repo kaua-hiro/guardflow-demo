@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  @font-face { font-family: 'SG'; src: local('Space Grotesk'); }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    width: 1200px; height: 630px; background:#0a0e11; position:relative; overflow:hidden;
+    font-family: 'Segoe UI', Arial, sans-serif;
+  }
+  .grid {
+    position:absolute; inset:0;
+    background-image: linear-gradient(#1a2129 1px, transparent 1px), linear-gradient(90deg, #1a2129 1px, transparent 1px);
+    background-size: 42px 42px;
+  }
+  .glow {
+    position:absolute; top:-260px; left:-380px; width:1040px; height:640px; border-radius:50%;
+    background: radial-gradient(ellipse at center, rgba(56,225,212,0.22), transparent 65%);
+  }
+  .brand { position:absolute; top:56px; left:72px; display:flex; align-items:center; gap:12px; }
+  .brand span { font-size:27px; font-weight:700; color:#e9eef0; }
+  .brand b { color:#38E1D4; font-weight:700; }
+  h1 { position:absolute; top:150px; left:72px; font-size:52px; font-weight:700; color:#e9eef0; line-height:1.18; width:680px; }
+  h1 .accent { color:#38E1D4; }
+  .sub { position:absolute; top:322px; left:72px; width:640px; font-size:20px; color:#93a3ab; line-height:1.5; }
+
+  .chain { position:absolute; top:398px; left:72px; font-family: 'Consolas', monospace; font-size:14px; }
+  .chain-row { display:flex; align-items:center; gap:12px; margin-bottom:14px; position:relative; }
+  .dot { width:10px; height:10px; border-radius:50%; background:#38E1D4; flex-shrink:0; box-shadow: 0 0 0 4px rgba(56,225,212,0.15); }
+  .chip { background:#171d24; border:1px solid #232c34; border-radius:6px; padding:6px 12px; color:#93a3ab; }
+  .chip.self { color:#38E1D4; border-color:#1f6b66; background: rgba(56,225,212,0.08); }
+  .arrow { color:#5d6b73; }
+  .ok { color:#4ade95; margin-left:6px; }
+
+  .card { position:absolute; top:150px; right:72px; width:258px; height:330px; border-radius:18px; background:#10151a; border:1px solid #232c34; padding:26px; }
+  .card .label { font-size:13px; color:#93a3ab; letter-spacing:0.04em; }
+  .card .score { font-size:64px; font-weight:700; color:#38E1D4; margin-top:14px; }
+  .card .score small { font-size:18px; color:#5d6b73; font-weight:500; }
+  .bar { height:8px; border-radius:4px; background:#1e262e; margin-top:20px; overflow:hidden; }
+  .bar div { height:100%; width:86%; background:#38E1D4; border-radius:4px; }
+  .row { display:flex; justify-content:space-between; font-size:13px; color:#93a3ab; padding:13px 0; border-top:1px solid #1a2129; }
+  .row b { color:#e9eef0; }
+  .row:first-of-type { border-top: none; }
+  .row.warn b { color: #f2b84b; }
+
+  footer { position:absolute; bottom:44px; left:72px; font-size:14px; color:#5d6b73; }
+</style>
+</head>
+<body>
+  <div class="grid"></div>
+  <div class="glow"></div>
+
+  <div class="brand">
+    <svg width="34" height="34" viewBox="0 0 44 44" fill="none">
+      <path d="M22 3 L38 9 V20 C38 30 32 37 22 41 C12 37 6 30 6 20 V9 Z" stroke="#38E1D4" stroke-width="3"/>
+      <path d="M16 21 L20.5 26 L29 16" stroke="#38E1D4" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    </svg>
+    <span>Guard<b>Flow</b></span>
+  </div>
+
+  <h1>Compliance e acesso,<br><span class="accent">auditáveis por design.</span></h1>
+  <p class="sub">Revisão de acessos, trilha de auditoria com hash-chain e checklist SOC 2 / ISO 27001 / LGPD.</p>
+
+  <div class="chain">
+    <div class="chain-row"><span class="dot"></span><span class="chip">prev 7b2d44aa</span><span class="arrow">→</span><span class="chip self">a3f9e1c2</span><span class="ok">✓ encadeado</span></div>
+    <div class="chain-row"><span class="dot"></span><span class="chip">prev a3f9e1c2</span><span class="arrow">→</span><span class="chip self">e19c0f31</span><span class="ok">✓ encadeado</span></div>
+    <div class="chain-row"><span class="dot"></span><span class="chip">prev e19c0f31</span><span class="arrow">→</span><span class="chip self">5d0b7a44</span><span class="ok">✓ encadeado</span></div>
+  </div>
+
+  <div class="card">
+    <div class="label">SCORE DE COMPLIANCE</div>
+    <div class="score">86<small>/100</small></div>
+    <div class="bar"><div></div></div>
+    <div class="row warn"><span>Revisões pendentes</span><b>3</b></div>
+    <div class="row"><span>Acessos revogados</span><b>1</b></div>
+    <div class="row"><span>Checklist SOC 2</span><b>6/10</b></div>
+  </div>
+
+  <footer>Projeto de portfólio — Kauã Hiro Mizumoto</footer>
+</body>
+</html>

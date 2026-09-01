@@ -1,0 +1,56 @@
+.notfound {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  position: relative;
+  padding: 24px;
+  text-align: center;
+}
+
+.notfound__grid {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(var(--border-soft) 1px, transparent 1px),
+    linear-gradient(90deg, var(--border-soft) 1px, transparent 1px);
+  background-size: 42px 42px;
+  mask-image: radial-gradient(circle at 50% 40%, black, transparent 70%);
+}
+
+.notfound__content {
+  position: relative;
+  max-width: 440px;
+}
+
+.notfound__code {
+  font-size: 15px;
+  color: var(--accent);
+  letter-spacing: 0.1em;
+  display: block;
+  margin-bottom: 14px;
+}
+
+.notfound__content h1 {
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.notfound__content p {
+  color: var(--text-dim);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.notfound__hash {
+  margin: 22px 0;
+  font-size: 11.5px;
+  color: var(--text-faint);
+}
+.notfound__hash span {
+  color: var(--accent);
+}
+
+.notfound__cta {
+  text-decoration: none;
+  display: inline-block;
+  padding: 11px 20px;
+}

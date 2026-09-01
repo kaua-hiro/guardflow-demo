@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://guardflow-demo.vercel.app/sitemap.xml
